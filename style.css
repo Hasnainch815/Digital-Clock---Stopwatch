@@ -24,8 +24,8 @@ body {
     justify-content: center;
     height: 100dvh;
     flex-direction: column;
-    width: 70%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     
@@ -60,8 +60,8 @@ h1, h2 {
 
 .btn {
     font-family: 'Edu TAS Beginner', sans-serif;
-    font-size: 3rem;
-    padding: 15px 30px;
+    font-size: 2.5rem;
+    padding: 10px 20px;
     font-weight: bold;
     border: none;
     outline: none;
@@ -139,19 +139,86 @@ h1, h2 {
     align-items: center;
     padding-bottom: 30px;
     padding-top: 10px;
+    width: 100%;
 }
 
 #clock {
     font-family: monospace;
-    font-size: 8rem;
+    font-size: 4rem;
+    height: 150px;
+    padding: 10px 20px;
     font-weight: bold;
     text-align: center;
     backdrop-filter: blur(10px);
     background-color: hsla(0, 0%, 100%, 0.1);
-    height: 200px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 15px;
-    justify-content: center;
+    border-radius: 12px;
+    white-space: nowrap;
     
 }
+
+
+#sw-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    height: fit-content;
+}
+
+#swDisplay {
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+
+}
+
+#controls button{
+    font-size: 2rem;
+    margin: 10px;
+    min-width: 100px;
+    border: none;
+    transition: ease, 0.5s;
+}
+
+#controls button:active {
+    color: #000; 
+    background: #009ACD; 
+    transform: scale(0.90); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 2rem;
+        padding: 8px 16px;
+    }
+
+    #clock {
+        font-size: 3rem;
+        height: 120px;
+        padding: 8px 16px;
+    }
+
+    #swDisplay {
+        font-size: 3rem;
+    }
+
+    #controls button {
+        font-size: 1.5rem;
+        margin: 8px;
+        min-width: 80px;
+    }
+}
+
