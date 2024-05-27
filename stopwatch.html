@@ -1,0 +1,36 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasnain's Digital Clock & Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Hasnain's Stopwatch</h1>
+
+        <div id="sw-Container" class="glass">
+            <div id="swDisplay" >
+                00:00:00:00
+            </div>
+            <div id="controls">
+              <button class="btn" id="startBtn" onclick="start()">Start</button>
+              <button class="btn" id="stopBtn" onclick="stop()">Stop</button>
+              <button class="btn" id="resetBtn" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <button class="btn">Digital Clock</button>
+       
+        
+
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
