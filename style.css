@@ -13,10 +13,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    align-content: baseline;
     text-align: center;
 }
 
@@ -24,25 +22,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100dvh;
     flex-direction: column;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    
 }
 
-.glass {
+.glass{
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(5px); 
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #00BFFF; 
+}
+
+a:hover {
+    color: #FFA500; 
+}
+
+h1, h2 {
     font-family: 'Edu TAS Beginner', sans-serif;
     font-size: 5em;
-    color: #E0E0E0;
+    color: #E0E0E0; 
 }
 
 .btn {
@@ -52,12 +65,12 @@ h1 {
     font-weight: bold;
     border: none;
     outline: none;
-    color: #FFFFFF;
+    color: #FFFFFF; 
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 15px;
-    background-color: #00BFFF;
+    background-color: #00BFFF; 
     transition: color 0.3s, background 0.3s, transform 0.1s, box-shadow 0.1s;
 }
 
@@ -119,6 +132,31 @@ h1 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
+
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#clock {
+    font-family: monospace;
+    font-size: 4rem;
+    height: 150px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 12px;
+    white-space: nowrap;
+    
+}
+
+
 #sw-Container {
     display: flex;
     flex-direction: column;
@@ -136,9 +174,10 @@ h1 {
     color: #E0E0E0;
     text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
     margin-bottom: 25px;
+
 }
 
-#controls button {
+#controls button{
     font-size: 2rem;
     margin: 10px;
     min-width: 100px;
@@ -153,6 +192,8 @@ h1 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
+
+
 @media screen and (max-width: 600px) {
     .container {
         width: 100%;
@@ -161,6 +202,12 @@ h1 {
 
     .btn {
         font-size: 2rem;
+        padding: 8px 16px;
+    }
+
+    #clock {
+        font-size: 3rem;
+        height: 120px;
         padding: 8px 16px;
     }
 
@@ -174,3 +221,4 @@ h1 {
         min-width: 80px;
     }
 }
+
